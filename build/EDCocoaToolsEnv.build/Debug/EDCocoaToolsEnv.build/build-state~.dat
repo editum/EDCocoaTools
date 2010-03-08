@@ -1,196 +1,0 @@
-TEDCocoaToolsEnv
-v7
-r0
-t289761554.572671
-cCheck dependencies
-cProcessInfoPlistFile /Users/olivermichel/Development/EDCocoaTools/build/Debug/EDCocoaToolsEnv.app/Contents/Info.plist EDCocoaToolsEnv-Info.plist
-cCopyStringsFile /Users/olivermichel/Development/EDCocoaTools/build/Debug/EDCocoaToolsEnv.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
-cCompileXIB /Users/olivermichel/Development/EDCocoaTools/English.lproj/MainMenu.xib
-cProcessPCH /var/folders/te/teimtKr1F-SnLkoHo4n-9U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/EDCocoaToolsEnv_Prefix-guigogymppzznjakfxvleddhkgof/EDCocoaToolsEnv_Prefix.pch.gch EDCocoaToolsEnv_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/EDCocoaToolsEnv.build/Debug/EDCocoaToolsEnv.build/Objects-normal/x86_64/main.o /Users/olivermichel/Development/EDCocoaTools/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/EDCocoaToolsEnv.build/Debug/EDCocoaToolsEnv.build/Objects-normal/x86_64/EDCocoaToolsEnvAppDelegate.o /Users/olivermichel/Development/EDCocoaTools/EDCocoaToolsEnvAppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/olivermichel/Development/EDCocoaTools/build/Debug/EDCocoaToolsEnv.app/Contents/MacOS/EDCocoaToolsEnv normal x86_64
-cTouch /Users/olivermichel/Development/EDCocoaTools/build/Debug/EDCocoaToolsEnv.app
-
-N/Developer/SDKs/MacOSX10.6.sdk
-c000000004B6D646800000000000000EE
-t1265460328
-s238
-
-N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
-c0000000040C4AA6800000000000001E5
-t1086630504
-s485
-
-N/System/Library/Frameworks/Cocoa.framework/Cocoa
-c000000004A1F2D63000000000000A5E0
-t1243557219
-s42464
-
-N/Users/olivermichel/Development/EDCocoaTools/EDCocoaToolsEnvAppDelegate.h
-c000000004B953162000000000000015E
-t1268068706
-s350
-i<Cocoa/Cocoa.h>
-
-N/Users/olivermichel/Development/EDCocoaTools/EDCocoaToolsEnvAppDelegate.m
-c000000004B953162000000000000019B
-t1268068706
-s411
-i"EDCocoaToolsEnvAppDelegate.h"
-
-N/Users/olivermichel/Development/EDCocoaTools/EDCocoaToolsEnv_Prefix.pch
-c000000004B95316200000000000000A1
-t1268068706
-s161
-i<Cocoa/Cocoa.h>
-
-N/Users/olivermichel/Development/EDCocoaTools/English.lproj/InfoPlist.strings
-c000000004B953162000000000000002D
-t1268068706
-s45
-
-N/Users/olivermichel/Development/EDCocoaTools/English.lproj/MainMenu.xib
-c000000004B953162000000000002BBC3
-t1268068706
-s179139
-
-N/Users/olivermichel/Development/EDCocoaTools/build/Debug/EDCocoaToolsEnv.app
-t1268068754
-s102
-
-N/Users/olivermichel/Development/EDCocoaTools/build/Debug/EDCocoaToolsEnv.app/Contents/Info.plist
-t1268068750
-s910
-
-N/Users/olivermichel/Development/EDCocoaTools/build/Debug/EDCocoaToolsEnv.app/Contents/MacOS/EDCocoaToolsEnv
-t1268068754
-s14696
-
-N/Users/olivermichel/Development/EDCocoaTools/build/Debug/EDCocoaToolsEnv.app/Contents/PkgInfo
-t1268068750
-s8
-
-N/Users/olivermichel/Development/EDCocoaTools/build/Debug/EDCocoaToolsEnv.app/Contents/Resources/English.lproj/InfoPlist.strings
-t1268068750
-s92
-
-N/Users/olivermichel/Development/EDCocoaTools/build/Debug/EDCocoaToolsEnv.app/Contents/Resources/English.lproj/MainMenu.nib
-t1268068750
-s34505
-
-N/Users/olivermichel/Development/EDCocoaTools/build/EDCocoaToolsEnv.build/Debug/EDCocoaToolsEnv.build/Objects-normal/x86_64/EDCocoaToolsEnv.LinkFileList
-c000000004B95318E000000000000011A
-t1268068750
-s282
-
-N/Users/olivermichel/Development/EDCocoaTools/build/EDCocoaToolsEnv.build/Debug/EDCocoaToolsEnv.build/Objects-normal/x86_64/EDCocoaToolsEnvAppDelegate.o
-t1268068754
-s21320
-
-N/Users/olivermichel/Development/EDCocoaTools/build/EDCocoaToolsEnv.build/Debug/EDCocoaToolsEnv.build/Objects-normal/x86_64/main.o
-t1268068754
-s5008
-
-N/Users/olivermichel/Development/EDCocoaTools/main.m
-c000000004B9531620000000000000110
-t1268068706
-s272
-i<Cocoa/Cocoa.h>
-
-N/var/folders/te/teimtKr1F-SnLkoHo4n-9U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/EDCocoaToolsEnv_Prefix-guigogymppzznjakfxvleddhkgof/EDCocoaToolsEnv_Prefix.pch.gch
-t1268068753
-s54212368
-
-NEDCocoaToolsEnv-Info.plist
-c000000004B95316200000000000003EA
-t1268068706
-s1002
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies289761550#289761550#0(0"0(0#1#0"28710924367954040#0"0#
-
-CCompileC build/EDCocoaToolsEnv.build/Debug/EDCocoaToolsEnv.build/Objects-normal/x86_64/EDCocoaToolsEnvAppDelegate.o /Users/olivermichel/Development/EDCocoaTools/EDCocoaToolsEnvAppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s289761553.998007
-e289761554.171398
-r1
-xCompileC
-xbuild/EDCocoaToolsEnv.build/Debug/EDCocoaToolsEnv.build/Objects-normal/x86_64/EDCocoaToolsEnvAppDelegate.o
-x/Users/olivermichel/Development/EDCocoaTools/EDCocoaToolsEnvAppDelegate.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@81"Compile /Users/olivermichel/Development/EDCocoaTools/EDCocoaToolsEnvAppDelegate.m289761553#289761554#0(0"0(0#0#73"/Users/olivermichel/Development/EDCocoaTools/EDCocoaToolsEnvAppDelegate.m4300885448#1720"    cd /Users/olivermichel/Development/EDCocoaTools    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/olivermichel/Development/EDCocoaTools/build/EDCocoaToolsEnv.build/Debug/EDCocoaToolsEnv.build/EDCocoaToolsEnv-generated-files.hmap -I/Users/olivermichel/Development/EDCocoaTools/build/EDCocoaToolsEnv.build/Debug/EDCocoaToolsEnv.build/EDCocoaToolsEnv-own-target-headers.hmap -I/Users/olivermichel/Development/EDCocoaTools/build/EDCocoaToolsEnv.build/Debug/EDCocoaToolsEnv.build/EDCocoaToolsEnv-all-target-headers.hmap -iquote /Users/olivermichel/Development/EDCocoaTools/build/EDCocoaToolsEnv.build/Debug/EDCocoaToolsEnv.build/EDCocoaToolsEnv-project-headers.hmap -F/Users/olivermichel/Development/EDCocoaTools/build/Debug -I/Users/olivermichel/Development/EDCocoaTools/build/Debug/include -I/Users/olivermichel/Development/EDCocoaTools/build/EDCocoaToolsEnv.build/Debug/EDCocoaToolsEnv.build/DerivedSources/x86_64 -I/Users/olivermichel/Development/EDCocoaTools/build/EDCocoaToolsEnv.build/Debug/EDCocoaToolsEnv.build/DerivedSources -include /var/folders/te/teimtKr1F-SnLkoHo4n-9U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/EDCocoaToolsEnv_Prefix-guigogymppzznjakfxvleddhkgof/EDCocoaToolsEnv_Prefix.pch -c /Users/olivermichel/Development/EDCocoaTools/EDCocoaToolsEnvAppDelegate.m -o /Users/olivermichel/Development/EDCocoaTools/build/EDCocoaToolsEnv.build/Debug/EDCocoaToolsEnv.build/Objects-normal/x86_64/EDCocoaToolsEnvAppDelegate.o0#
-
-CCompileC build/EDCocoaToolsEnv.build/Debug/EDCocoaToolsEnv.build/Objects-normal/x86_64/main.o /Users/olivermichel/Development/EDCocoaTools/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s289761553.997221
-e289761554.150848
-r1
-xCompileC
-xbuild/EDCocoaToolsEnv.build/Debug/EDCocoaToolsEnv.build/Objects-normal/x86_64/main.o
-x/Users/olivermichel/Development/EDCocoaTools/main.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@59"Compile /Users/olivermichel/Development/EDCocoaTools/main.m289761553#289761554#0(0"0(0#0#51"/Users/olivermichel/Development/EDCocoaTools/main.m4300885448#1676"    cd /Users/olivermichel/Development/EDCocoaTools    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/olivermichel/Development/EDCocoaTools/build/EDCocoaToolsEnv.build/Debug/EDCocoaToolsEnv.build/EDCocoaToolsEnv-generated-files.hmap -I/Users/olivermichel/Development/EDCocoaTools/build/EDCocoaToolsEnv.build/Debug/EDCocoaToolsEnv.build/EDCocoaToolsEnv-own-target-headers.hmap -I/Users/olivermichel/Development/EDCocoaTools/build/EDCocoaToolsEnv.build/Debug/EDCocoaToolsEnv.build/EDCocoaToolsEnv-all-target-headers.hmap -iquote /Users/olivermichel/Development/EDCocoaTools/build/EDCocoaToolsEnv.build/Debug/EDCocoaToolsEnv.build/EDCocoaToolsEnv-project-headers.hmap -F/Users/olivermichel/Development/EDCocoaTools/build/Debug -I/Users/olivermichel/Development/EDCocoaTools/build/Debug/include -I/Users/olivermichel/Development/EDCocoaTools/build/EDCocoaToolsEnv.build/Debug/EDCocoaToolsEnv.build/DerivedSources/x86_64 -I/Users/olivermichel/Development/EDCocoaTools/build/EDCocoaToolsEnv.build/Debug/EDCocoaToolsEnv.build/DerivedSources -include /var/folders/te/teimtKr1F-SnLkoHo4n-9U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/EDCocoaToolsEnv_Prefix-guigogymppzznjakfxvleddhkgof/EDCocoaToolsEnv_Prefix.pch -c /Users/olivermichel/Development/EDCocoaTools/main.m -o /Users/olivermichel/Development/EDCocoaTools/build/EDCocoaToolsEnv.build/Debug/EDCocoaToolsEnv.build/Objects-normal/x86_64/main.o0#
-
-CCompileXIB /Users/olivermichel/Development/EDCocoaTools/English.lproj/MainMenu.xib
-s289761550.120567
-e289761550.542214
-r1
-xCompileXIB
-x/Users/olivermichel/Development/EDCocoaTools/English.lproj/MainMenu.xib
-lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib289761550#289761550#0(0"0(0#0#71"/Users/olivermichel/Development/EDCocoaTools/English.lproj/MainMenu.xib4300885448#353"    cd /Users/olivermichel/Development/EDCocoaTools    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/olivermichel/Development/EDCocoaTools/build/Debug/EDCocoaToolsEnv.app/Contents/Resources/English.lproj/MainMenu.nib /Users/olivermichel/Development/EDCocoaTools/English.lproj/MainMenu.xib0#
-
-CCopyStringsFile /Users/olivermichel/Development/EDCocoaTools/build/Debug/EDCocoaToolsEnv.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
-s289761550.119841
-e289761550.373369
-r1
-xCopyStringsFile
-x/Users/olivermichel/Development/EDCocoaTools/build/Debug/EDCocoaToolsEnv.app/Contents/Resources/English.lproj/InfoPlist.strings
-xEnglish.lproj/InfoPlist.strings
-lSLF07#2@36"Copy English.lproj/InfoPlist.strings289761550#289761550#0(0"0(0#0#76"/Users/olivermichel/Development/EDCocoaTools/English.lproj/InfoPlist.strings4300885448#385"    cd /Users/olivermichel/Development/EDCocoaTools    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Users/olivermichel/Development/EDCocoaTools/build/Debug/EDCocoaToolsEnv.app/Contents/Resources/English.lproj0#
-
-CLd /Users/olivermichel/Development/EDCocoaTools/build/Debug/EDCocoaToolsEnv.app/Contents/MacOS/EDCocoaToolsEnv normal x86_64
-s289761554.171480
-e289761554.543828
-r1
-xLd
-x/Users/olivermichel/Development/EDCocoaTools/build/Debug/EDCocoaToolsEnv.app/Contents/MacOS/EDCocoaToolsEnv
-xnormal
-xx86_64
-lSLF07#2@112"Link /Users/olivermichel/Development/EDCocoaTools/build/Debug/EDCocoaToolsEnv.app/Contents/MacOS/EDCocoaToolsEnv289761554#289761554#0(0"0(0#0#0"4300885448#612"    cd /Users/olivermichel/Development/EDCocoaTools    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/olivermichel/Development/EDCocoaTools/build/Debug -F/Users/olivermichel/Development/EDCocoaTools/build/Debug -filelist /Users/olivermichel/Development/EDCocoaTools/build/EDCocoaToolsEnv.build/Debug/EDCocoaToolsEnv.build/Objects-normal/x86_64/EDCocoaToolsEnv.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -o /Users/olivermichel/Development/EDCocoaTools/build/Debug/EDCocoaToolsEnv.app/Contents/MacOS/EDCocoaToolsEnv0#
-
-CProcessInfoPlistFile /Users/olivermichel/Development/EDCocoaTools/build/Debug/EDCocoaToolsEnv.app/Contents/Info.plist EDCocoaToolsEnv-Info.plist
-s289761550.089882
-e289761550.119611
-r1
-xProcessInfoPlistFile
-x/Users/olivermichel/Development/EDCocoaTools/build/Debug/EDCocoaToolsEnv.app/Contents/Info.plist
-xEDCocoaToolsEnv-Info.plist
-lSLF07#2@34"Process EDCocoaToolsEnv-Info.plist289761550#289761550#0(0"0(0#0#71"/Users/olivermichel/Development/EDCocoaTools/EDCocoaToolsEnv-Info.plist13229753409208424#352"    cd /Users/olivermichel/Development/EDCocoaTools    builtin-infoPlistUtility EDCocoaToolsEnv-Info.plist -genpkginfo /Users/olivermichel/Development/EDCocoaTools/build/Debug/EDCocoaToolsEnv.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/olivermichel/Development/EDCocoaTools/build/Debug/EDCocoaToolsEnv.app/Contents/Info.plist0#
-
-CProcessPCH /var/folders/te/teimtKr1F-SnLkoHo4n-9U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/EDCocoaToolsEnv_Prefix-guigogymppzznjakfxvleddhkgof/EDCocoaToolsEnv_Prefix.pch.gch EDCocoaToolsEnv_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s289761550.542397
-e289761553.997086
-r1
-xProcessPCH
-x/var/folders/te/teimtKr1F-SnLkoHo4n-9U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/EDCocoaToolsEnv_Prefix-guigogymppzznjakfxvleddhkgof/EDCocoaToolsEnv_Prefix.pch.gch
-xEDCocoaToolsEnv_Prefix.pch
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@37"Precompile EDCocoaToolsEnv_Prefix.pch289761550#289761553#0(0"0(0#0#71"/Users/olivermichel/Development/EDCocoaTools/EDCocoaToolsEnv_Prefix.pch4300885448#1568"    cd /Users/olivermichel/Development/EDCocoaTools    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/olivermichel/Development/EDCocoaTools/build/EDCocoaToolsEnv.build/Debug/EDCocoaToolsEnv.build/EDCocoaToolsEnv-generated-files.hmap -I/Users/olivermichel/Development/EDCocoaTools/build/EDCocoaToolsEnv.build/Debug/EDCocoaToolsEnv.build/EDCocoaToolsEnv-own-target-headers.hmap -I/Users/olivermichel/Development/EDCocoaTools/build/EDCocoaToolsEnv.build/Debug/EDCocoaToolsEnv.build/EDCocoaToolsEnv-all-target-headers.hmap -iquote /Users/olivermichel/Development/EDCocoaTools/build/EDCocoaToolsEnv.build/Debug/EDCocoaToolsEnv.build/EDCocoaToolsEnv-project-headers.hmap -F/Users/olivermichel/Development/EDCocoaTools/build/Debug -I/Users/olivermichel/Development/EDCocoaTools/build/Debug/include -I/Users/olivermichel/Development/EDCocoaTools/build/EDCocoaToolsEnv.build/Debug/EDCocoaToolsEnv.build/DerivedSources/x86_64 -I/Users/olivermichel/Development/EDCocoaTools/build/EDCocoaToolsEnv.build/Debug/EDCocoaToolsEnv.build/DerivedSources -c /Users/olivermichel/Development/EDCocoaTools/EDCocoaToolsEnv_Prefix.pch -o /var/folders/te/teimtKr1F-SnLkoHo4n-9U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/EDCocoaToolsEnv_Prefix-guigogymppzznjakfxvleddhkgof/EDCocoaToolsEnv_Prefix.pch.gch0#
-
-CTouch /Users/olivermichel/Development/EDCocoaTools/build/Debug/EDCocoaToolsEnv.app
-s289761554.543920
-e289761554.572615
-r1
-xTouch
-x/Users/olivermichel/Development/EDCocoaTools/build/Debug/EDCocoaToolsEnv.app
-lSLF07#2@82"Touch /Users/olivermichel/Development/EDCocoaTools/build/Debug/EDCocoaToolsEnv.app289761554#289761554#0(0"0(0#0#0"4300885448#151"    cd /Users/olivermichel/Development/EDCocoaTools    /usr/bin/touch -c /Users/olivermichel/Development/EDCocoaTools/build/Debug/EDCocoaToolsEnv.app0#
-

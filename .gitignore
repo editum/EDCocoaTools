@@ -1,0 +1,7 @@
+build/*
+*.pbxuser
+*.mode1v3
+*.DS_STORE
+*.DS_Store
+*.perspectivev3
+EDCocoaToolsEnv.xcodeproj/olivermichel.perspectivev3

@@ -1,0 +1,2 @@
+tupaloiPhoneApp.xcodeproj -crlf -diff -merge
+tupaloiPhoneApp.xcodeproj/* -crlf -diff -merge
