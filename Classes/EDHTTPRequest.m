@@ -106,7 +106,7 @@
 		if(_requestHeaders) 
 			[request setAllHTTPHeaderFields:_requestHeaders];
 		
-		_urlConnection = [NSURLConnection connectionWithRequest:request delegate:self];
+		_urlConnection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
 		
 		if(_urlConnection) {
 			NSLog(@"EDHTTPRequest: %@ %@", [request HTTPMethod], _requestURL);
@@ -187,13 +187,17 @@
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
 	
-	NSLog(@"didreceive data");
-	
+	if(_responseData) {
+		[_responseData appendData:data];
+	} else {
+		[_delegate request:self didFailWithError:EDHTTPRequestErrorFailedSavingResponseData status:0];
+	}
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
-
-	NSLog(@"did finish loading");
+	
+	[_delegate request:self finishedSucessfullyWithStatus:[_response statusCode] data:[_responseData autorelease]];
+	[_requestTime release], _responseData = nil, _requestTime = nil;
 }
 
 #pragma mark -
@@ -204,7 +208,7 @@
 }
 
 - (void)dealloc {
-	
+
 	_delegate = nil;
 	[_acceptedStatusCodes release];
 	[_requestBody release];
