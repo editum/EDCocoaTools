@@ -22,7 +22,8 @@ typedef enum {
 	EDHTTPRequestErrorFailedSavingResponseData,
 	EDHTTPRequestErrorNoNetworkConnection,
 	EDHTTPRequestErrorNetworkConnectionLost,
-	EDHTTPRequestErrorCannotConnectToHost
+	EDHTTPRequestErrorCannotConnectToHost,
+	EDHTTPRequestErrorParallelRequests
 } EDHTTPRequestError;
 
 typedef enum {
@@ -59,6 +60,7 @@ typedef enum {
 	NSURL *_requestURL;
 	
 	NSDate *_requestTime;
+	NSTimeInterval _responseTime;
 	NSMutableData *_responseData;
 	BOOL _running;
 	NSURLConnection *_urlConnection;
@@ -78,6 +80,7 @@ typedef enum {
 @property(nonatomic, copy) NSURL *requestURL;
 
 @property(nonatomic, readonly) NSHTTPURLResponse *response;
+@property(readonly) NSTimeInterval responseTime;
 
 + (EDHTTPRequest *)request;
 + (EDHTTPRequest *)requestWithURL:(NSURL *)url delegate:(id)theDelegate;

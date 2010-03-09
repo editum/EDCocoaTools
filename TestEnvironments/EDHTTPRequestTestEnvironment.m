@@ -14,20 +14,18 @@
 - (void)performTests {
 	
 	EDHTTPRequest *request = [EDHTTPRequest requestWithURL:[NSURL URLWithString:@"http://www.editum.de"] delegate:self];
-
-	request.method = EDHTTPRequestMethodGet;
-	
+	request.acceptedStatusCodes = [NSArray arrayWithObject:[NSNumber numberWithInt:200]];
 	[request start];
 }
 
 - (void)request:(EDHTTPRequest *)request didFailWithError:(EDHTTPRequestError)error status:(NSUInteger)statusCode {
 	
-	NSLog(@"did fail with error");
+	NSLog(@"did fail with error %i %i", error, statusCode);
 }
 
 - (void)request:(EDHTTPRequest *)request finishedSucessfullyWithStatus:(NSUInteger)statusCode data:(NSData *)returnData {
 	
-	NSLog(@"finished sucessfully");
+	NSLog(@"finished sucessfully %f - %@", request.responseTime, [request.response allHeaderFields]);
 }
 
 @end

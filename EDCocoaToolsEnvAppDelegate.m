@@ -15,8 +15,10 @@
 @synthesize window;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+	
 	EDHTTPRequestTestEnvironment *env = [[EDHTTPRequestTestEnvironment alloc] init];
 	[env performTests];
+	[env release];
 }
 
 @end

@@ -23,6 +23,7 @@
 @synthesize timeOutInterval = _timeOutInterval;
 @synthesize requestURL = _requestURL;
 @synthesize response = _response;
+@synthesize responseTime = _responseTime;
 
 #pragma mark -
 #pragma mark Initializers
@@ -72,16 +73,21 @@
 
 - (void)start {
 	
-	if(!_delegate || !_requestURL) {
+	if(!_delegate || !_requestURL || _running) {
 		
 		if(!_delegate) {
 			@throw [NSException exceptionWithName:@"EDHTTPRequest Exception" reason:@"No Delegate defined" userInfo:nil];
 		} else if(!_requestURL) {
 			@throw [NSException exceptionWithName:@"EDHTTPRequest Exception" reason:@"No URL defined" userInfo:nil];
+		} else if(_running) {
+			if(_delegate) 
+				[_delegate request:self didFailWithError:EDHTTPRequestErrorParallelRequests status:0];
 		}
 		
 	} else {
 		
+		_running = YES;
+		_responseTime = 0;
 		[_response release];
 		
 		if(!_timeOutInterval)
@@ -108,6 +114,8 @@
 		
 		_urlConnection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
 		
+		[request release];
+		
 		if(_urlConnection) {
 			NSLog(@"EDHTTPRequest: %@ %@", [request HTTPMethod], _requestURL);
 			_responseData = [[NSMutableData alloc] init];
@@ -120,6 +128,7 @@
 
 - (void)cancel {
 	
+	_running = NO;
 	[_urlConnection cancel];
 	[_responseData release], [_requestTime release];
 	_responseData = nil, _requestTime = nil;	
@@ -146,7 +155,7 @@
 			 
 		default: [_delegate request:self didFailWithError:EDHTTPRequestErrorGeneric status:0];
 	}
-			 
+	_running = NO;
 	[_responseData release], [_requestTime release];
 	_responseData = nil, _requestTime = nil;
 }
@@ -196,13 +205,24 @@
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
 	
+	_responseTime = [[NSDate date] timeIntervalSinceDate:_requestTime];
+	
 	[_delegate request:self finishedSucessfullyWithStatus:[_response statusCode] data:[_responseData autorelease]];
+	_running = NO;
 	[_requestTime release], _responseData = nil, _requestTime = nil;
 }
 
 #pragma mark -
 
 - (NSString *)description {
+	
+	if(_running) {
+		return [NSString stringWithFormat:@"EDHTTPRequest: running %@ - request time: %@", 
+				[_requestURL absoluteString], _requestTime];
+	} else {
+		return [NSString stringWithFormat:@"EDHTTPRequest: ready %@ - request time: %@", 
+				[_requestURL absoluteString], _requestTime];		
+	}
 	
 	return @"EDHTTPRequest:";
 }
