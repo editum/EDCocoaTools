@@ -268,6 +268,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateExpansionKey</key>
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
+								<string>93FB5C96115129880079A977</string>
 								<string>93CE364D1145693B0041F682</string>
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
@@ -279,8 +280,9 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>3</integer>
-									<integer>1</integer>
+									<integer>19</integer>
+									<integer>17</integer>
+									<integer>16</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -320,7 +322,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>93C225F4114568E900AB018C</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>EDHTTPRequestTestEnvironment.m</string>
+								<string>SenTestCase.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -328,19 +330,13 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>93C225F5114568E900AB018C</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>EDHTTPRequestTestEnvironment.m</string>
+										<string>SenTestCase.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>933675641146915200B28439</string>
+										<string>93FB5CD911512B170079A977</string>
 										<key>history</key>
 										<array>
-											<string>933674EC11468D9000B28439</string>
-											<string>933674F011468D9000B28439</string>
-											<string>933674F211468D9000B28439</string>
-											<string>933674F411468D9000B28439</string>
-											<string>933674F611468D9000B28439</string>
-											<string>933674F811468D9000B28439</string>
 											<string>933674FA11468D9000B28439</string>
 											<string>933674FB11468D9000B28439</string>
 											<string>933674FD11468D9000B28439</string>
@@ -354,11 +350,16 @@
 											<string>9336750D11468D9000B28439</string>
 											<string>9336750F11468D9000B28439</string>
 											<string>9336751111468D9000B28439</string>
-											<string>9336751A11468E4800B28439</string>
-											<string>9336751C11468E4800B28439</string>
-											<string>9336753611468ED100B28439</string>
-											<string>933675451146902600B28439</string>
-											<string>933675631146914E00B28439</string>
+											<string>93FB5C751151291F0079A977</string>
+											<string>93FB5CCA11512B0C0079A977</string>
+											<string>93FB5CCB11512B0C0079A977</string>
+											<string>93FB5CCC11512B0C0079A977</string>
+											<string>93FB5CCD11512B0C0079A977</string>
+											<string>93FB5CCE11512B0C0079A977</string>
+											<string>93FB5CCF11512B0C0079A977</string>
+											<string>93FB5CD011512B0C0079A977</string>
+											<string>93FB5CD211512B0C0079A977</string>
+											<string>93FB5CD811512B140079A977</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -372,18 +373,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1558, 914}}</string>
+								<string>{{0, 0}, {1558, 908}}</string>
 								<key>RubberWindowFrame</key>
 								<string>51 55 1869 1123 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>914pt</string>
+							<string>908pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>163pt</string>
+							<string>169pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -397,7 +398,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {1558, 136}}</string>
+										<string>{{10, 27}, {1558, 142}}</string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -451,7 +452,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {1558, 136}}</string>
+										<string>{{10, 27}, {1558, 142}}</string>
 										<key>RubberWindowFrame</key>
 										<string>51 55 1869 1123 0 0 1920 1178 </string>
 									</dict>
@@ -481,11 +482,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>93367440114685EF00B28439</string>
+				<string>93FB5CDA11512B170079A977</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>93367441114685EF00B28439</string>
+				<string>93FB5CDB11512B170079A977</string>
 				<string>93C225F4114568E900AB018C</string>
-				<string>93367442114685EF00B28439</string>
+				<string>93FB5CDC11512B170079A977</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -633,13 +634,13 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>93367443114685EF00B28439</string>
+				<string>93FB5CDD11512B170079A977</string>
 				<string>1CCC7628064C1048000F2A68</string>
 				<string>1CCC7629064C1048000F2A68</string>
-				<string>93367444114685EF00B28439</string>
-				<string>93367445114685EF00B28439</string>
-				<string>93367446114685EF00B28439</string>
-				<string>93367447114685EF00B28439</string>
+				<string>93FB5CDE11512B170079A977</string>
+				<string>93FB5CDF11512B170079A977</string>
+				<string>93FB5CE011512B170079A977</string>
+				<string>93FB5CE111512B170079A977</string>
 				<string>93C225F4114568E900AB018C</string>
 			</array>
 			<key>ToolbarConfigUserDefaultsMinorVersion</key>
@@ -674,9 +675,10 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>93367449114685EF00B28439</string>
-		<string>9336744A114685EF00B28439</string>
-		<string>/Users/olivermichel/Development/EDCocoaTools/EDCocoaToolsEnv.xcodeproj</string>
+		<string>93FB5CE211512B170079A977</string>
+		<string>93FB5CE311512B170079A977</string>
+		<string>93FB5CE411512B170079A977</string>
+		<string>/Users/olivermichel/Repositories/EDCocoaTools/EDCocoaToolsEnv.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>51 55 1869 1123 0 0 1920 1178 </string>
