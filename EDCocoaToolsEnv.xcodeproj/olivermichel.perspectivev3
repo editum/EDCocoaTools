@@ -280,9 +280,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>19</integer>
-									<integer>17</integer>
-									<integer>16</integer>
+									<integer>11</integer>
+									<integer>9</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -322,7 +321,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>93C225F4114568E900AB018C</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>SenTestCase.h</string>
+								<string>EDApplicationData.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -330,14 +329,13 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>93C225F5114568E900AB018C</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>SenTestCase.h</string>
+										<string>EDApplicationData.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>93FB5CD911512B170079A977</string>
+										<string>93FB5D77115135D60079A977</string>
 										<key>history</key>
 										<array>
-											<string>933674FA11468D9000B28439</string>
 											<string>933674FB11468D9000B28439</string>
 											<string>933674FD11468D9000B28439</string>
 											<string>933674FF11468D9000B28439</string>
@@ -350,16 +348,22 @@
 											<string>9336750D11468D9000B28439</string>
 											<string>9336750F11468D9000B28439</string>
 											<string>9336751111468D9000B28439</string>
-											<string>93FB5C751151291F0079A977</string>
 											<string>93FB5CCA11512B0C0079A977</string>
 											<string>93FB5CCB11512B0C0079A977</string>
-											<string>93FB5CCC11512B0C0079A977</string>
 											<string>93FB5CCD11512B0C0079A977</string>
-											<string>93FB5CCE11512B0C0079A977</string>
-											<string>93FB5CCF11512B0C0079A977</string>
 											<string>93FB5CD011512B0C0079A977</string>
 											<string>93FB5CD211512B0C0079A977</string>
-											<string>93FB5CD811512B140079A977</string>
+											<string>93FB5CF011512C750079A977</string>
+											<string>93FB5CFB11512CE00079A977</string>
+											<string>93FB5D1B115130BC0079A977</string>
+											<string>93FB5D1E115130BC0079A977</string>
+											<string>93FB5D1F115130BC0079A977</string>
+											<string>93FB5D3D115132040079A977</string>
+											<string>93FB5D59115133150079A977</string>
+											<string>93FB5D621151334D0079A977</string>
+											<string>93FB5D70115135B30079A977</string>
+											<string>93FB5D71115135B30079A977</string>
+											<string>93FB5D74115135B50079A977</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -675,7 +679,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>93FB5CE211512B170079A977</string>
 		<string>93FB5CE311512B170079A977</string>
 		<string>93FB5CE411512B170079A977</string>
 		<string>/Users/olivermichel/Repositories/EDCocoaTools/EDCocoaToolsEnv.xcodeproj</string>

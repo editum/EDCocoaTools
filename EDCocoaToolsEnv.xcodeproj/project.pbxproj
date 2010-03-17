@@ -16,8 +16,8 @@
 		93CE36541145693B0041F682 /* EDHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CE36521145693B0041F682 /* EDHTTPRequest.m */; };
 		93FB5C8A1151297A0079A977 /* EDApplicationData.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FB5C851151297A0079A977 /* EDApplicationData.m */; };
 		93FB5C8C1151297A0079A977 /* EDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FB5C891151297A0079A977 /* EDTools.m */; };
-		93FB5C9E11512A4F0079A977 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93FB5C9D11512A4F0079A977 /* SenTestingKit.framework */; };
 		93FB5CB611512AFF0079A977 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93FB5CB511512AFF0079A977 /* SystemConfiguration.framework */; };
+		93FB5D1611512F930079A977 /* EDApplicationDataTestEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FB5D1511512F930079A977 /* EDApplicationDataTestEnvironment.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,8 +41,9 @@
 		93FB5C851151297A0079A977 /* EDApplicationData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EDApplicationData.m; path = Classes/EDApplicationData.m; sourceTree = "<group>"; };
 		93FB5C881151297A0079A977 /* EDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EDTools.h; path = Classes/EDTools.h; sourceTree = "<group>"; };
 		93FB5C891151297A0079A977 /* EDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EDTools.m; path = Classes/EDTools.m; sourceTree = "<group>"; };
-		93FB5C9D11512A4F0079A977 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		93FB5CB511512AFF0079A977 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		93FB5D1411512F930079A977 /* EDApplicationDataTestEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDApplicationDataTestEnvironment.h; sourceTree = "<group>"; };
+		93FB5D1511512F930079A977 /* EDApplicationDataTestEnvironment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDApplicationDataTestEnvironment.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +52,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
-				93FB5C9E11512A4F0079A977 /* SenTestingKit.framework in Frameworks */,
 				93FB5CB611512AFF0079A977 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,7 +75,6 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				93FB5C9D11512A4F0079A977 /* SenTestingKit.framework */,
 				93FB5CB511512AFF0079A977 /* SystemConfiguration.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 			);
@@ -147,6 +146,8 @@
 			children = (
 				93CE364E1145693B0041F682 /* EDHTTPRequestTestEnvironment.h */,
 				93CE364F1145693B0041F682 /* EDHTTPRequestTestEnvironment.m */,
+				93FB5D1411512F930079A977 /* EDApplicationDataTestEnvironment.h */,
+				93FB5D1511512F930079A977 /* EDApplicationDataTestEnvironment.m */,
 			);
 			path = TestEnvironments;
 			sourceTree = "<group>";
@@ -221,6 +222,7 @@
 				93CE36541145693B0041F682 /* EDHTTPRequest.m in Sources */,
 				93FB5C8A1151297A0079A977 /* EDApplicationData.m in Sources */,
 				93FB5C8C1151297A0079A977 /* EDTools.m in Sources */,
+				93FB5D1611512F930079A977 /* EDApplicationDataTestEnvironment.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

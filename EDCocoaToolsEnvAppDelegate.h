@@ -8,6 +8,9 @@
 
 #import <Cocoa/Cocoa.h>
 
+#import "EDHTTPRequestTestEnvironment.h"
+#import "EDApplicationDataTestEnvironment.h"
+
 @interface EDCocoaToolsEnvAppDelegate : NSObject <NSApplicationDelegate> {
     NSWindow *window;
 }

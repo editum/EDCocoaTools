@@ -8,17 +8,21 @@
 
 #import "EDCocoaToolsEnvAppDelegate.h"
 
-#import "EDHTTPRequestTestEnvironment.h"
-
 @implementation EDCocoaToolsEnvAppDelegate
 
 @synthesize window;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	
+	/*
 	EDHTTPRequestTestEnvironment *env = [[EDHTTPRequestTestEnvironment alloc] init];
 	[env performTests];
 	[env release];
+	*/
+	
+	EDApplicationDataTestEnvironment *appDataEnv = [[EDApplicationDataTestEnvironment alloc] init];
+	[appDataEnv performTests];
+	[appDataEnv release];
 }
 
 @end
