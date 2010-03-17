@@ -195,7 +195,7 @@ static EDApplicationData *gAppDataInstance = nil;
 			int dictCount = [[_dataDictionary objectForKey:key] count];	
 			returnString = [returnString stringByAppendingFormat:@"\t%@ => NSDictionary: (%i elements) \n", key, dictCount];
 		} else {
-			NSString *className = [[_dataDictionary objectForKey:key] className];
+			NSString *className = [[[_dataDictionary objectForKey:key] class] description];
 			returnString = [returnString stringByAppendingFormat:@"\t%@ => %@: %@ \n", 
 							key, className, [_dataDictionary objectForKey:key]];
 		}
