@@ -28,9 +28,21 @@
 #pragma mark -
 #pragma mark Initializers
 
-- (id)initWithURL:(NSURL *)url delegate:(id)theDelegate {
+- (id)init {
 	
 	self = [super init];
+	
+	_acceptedStatusCodes = [[NSArray arrayWithObject:[NSNumber numberWithInt:200]] retain];
+	_identifier = @"default EDHTTPRequest";
+	_tag = 0;
+	_timeOutInterval = 8;
+	
+	return self;
+}
+
+- (id)initWithURL:(NSURL *)url delegate:(id)theDelegate {
+	
+	self = [self init];
 	_requestURL = [url copy]; 
 	_delegate = [theDelegate retain];
 	return self;
