@@ -9,29 +9,30 @@
 #import <Foundation/Foundation.h>
 
 typedef enum {
-	EDHTTPRequestErrorGeneric = 1,
-	EDHTTPRequestErrorConnectionInitFailed,
-	EDHTTPRequestErrorWrongStatus,
-	EDHTTPRequestErrorStatus400,
-	EDHTTPRequestErrorStatus401,
-	EDHTTPRequestErrorStatus402,
-	EDHTTPRequestErrorStatus403,
-	EDHTTPRequestErrorStatus404,
-	EDHTTPRequestErrorStatus500,
-	EDHTTPRequestErrorTimeOut,
-	EDHTTPRequestErrorFailedSavingResponseData,
-	EDHTTPRequestErrorNoNetworkConnection,
-	EDHTTPRequestErrorNetworkConnectionLost,
-	EDHTTPRequestErrorCannotConnectToHost,
-	EDHTTPRequestErrorParallelRequests
+	EDHTTPRequestErrorGeneric							= 1,
+	EDHTTPRequestErrorConnectionInitFailed			= 2,
+	EDHTTPRequestErrorWrongStatus						= 4,
+	EDHTTPRequestErrorStatus400						= 8,
+	EDHTTPRequestErrorStatus401						= 16,
+	EDHTTPRequestErrorStatus402						= 32,
+	EDHTTPRequestErrorStatus403						= 64,
+	EDHTTPRequestErrorStatus404						= 128,
+	EDHTTPRequestErrorStatus500						= 256,
+	EDHTTPRequestErrorTimeOut							= 512,
+	EDHTTPRequestErrorFailedSavingResponseData	= 1024,
+	EDHTTPRequestErrorNoNetworkConnection			= 2048,
+	EDHTTPRequestErrorNetworkConnectionLost		= 4096,
+	EDHTTPRequestErrorCannotConnectToHost			= 8192,
+	EDHTTPRequestErrorParallelRequests				= 16384,
+	EDHTTPRequestErrorWrongCredential				= 32768
 } EDHTTPRequestError;
 
 typedef enum {
-	EDHTTPRequestMethodGet = 1,
-	EDHTTPRequestMethodPost,
-	EDHTTPRequestMethodPut, 
-	EDHTTPRequestMethodDelete, 
-	EDHTTPRequestMethodHead
+	EDHTTPRequestMethodGet		= 1,
+	EDHTTPRequestMethodPost		= 2,
+	EDHTTPRequestMethodPut		= 3, 
+	EDHTTPRequestMethodDelete	= 4, 
+	EDHTTPRequestMethodHead		= 5
 } EDHTTPRequestMethod;
 
 @class EDHTTPRequest;

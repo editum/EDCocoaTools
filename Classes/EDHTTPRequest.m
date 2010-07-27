@@ -174,6 +174,22 @@
 
 - (void)connection:(NSURLConnection *)connection didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge {
 	
+	 if ([challenge previousFailureCount] == 0) {
+		 NSURLCredential *newCredential;
+		 newCredential = [NSURLCredential credentialWithUser:_credentialUser
+																  password:_credentialPassword
+															  persistence:NSURLCredentialPersistenceNone];
+		 
+		 [[challenge sender] useCredential:newCredential forAuthenticationChallenge:challenge];
+		 
+    } else {
+		 
+		 [[challenge sender] cancelAuthenticationChallenge:challenge];
+		 [_delegate request:self didFailWithError:EDHTTPRequestErrorWrongCredential status:0];
+		 
+		 [_urlConnection cancel], [_responseData release], [_requestTime release];
+		 _responseData = nil, _requestTime = nil;
+    }
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
@@ -185,7 +201,7 @@
 	if(_acceptedStatusCodes) {
 		
 		if (![_acceptedStatusCodes containsObject:[NSNumber numberWithInt:status]]) {
-			[_delegate request:self didFailWithError:EDHTTPRequestErrorWrongStatus status:status];
+			[_delegate request:self didFailWithError:EDHTTPRequestErrorWrongCredential status:status];
 			[_urlConnection cancel], [_responseData release], [_requestTime release];
 			_responseData = nil, _requestTime = nil;
 		}
