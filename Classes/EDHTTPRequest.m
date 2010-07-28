@@ -8,22 +8,21 @@
 
 #import "EDHTTPRequest.h"
 
-
 @implementation EDHTTPRequest
 
 @dynamic delegate;
-@synthesize method = _method;
-@synthesize acceptedStatusCodes = _acceptedStatusCodes;
-@synthesize requestBody = _requestBody;
-@synthesize requestHeaders = _requestHeaders;
-@synthesize credentialPassword = _credentialPassword;
-@synthesize credentialUser = _credentialUser;
-@synthesize identifier = _identifier;
-@synthesize tag = _tag;
-@synthesize timeOutInterval = _timeOutInterval;
-@synthesize requestURL = _requestURL;
-@synthesize response = _response;
-@synthesize responseTime = _responseTime;
+@synthesize method					= _method;
+@synthesize acceptedStatusCodes	= _acceptedStatusCodes;
+@synthesize requestBody				= _requestBody;
+@synthesize requestHeaders			= _requestHeaders;
+@synthesize credentialPassword	= _credentialPassword;
+@synthesize credentialUser			= _credentialUser;
+@synthesize identifier				= _identifier;
+@synthesize tag						= _tag;
+@synthesize timeOutInterval		= _timeOutInterval;
+@synthesize requestURL				= _requestURL;
+@synthesize response					= _response;
+@synthesize responseTime			= _responseTime;
 
 #pragma mark -
 #pragma mark Initializers
@@ -31,20 +30,15 @@
 - (id)init {
 	
 	self = [super init];
-	
 	_acceptedStatusCodes = [[NSArray arrayWithObject:[NSNumber numberWithInt:200]] retain];
-	_identifier = @"default EDHTTPRequest";
-	_tag = 0;
-	_timeOutInterval = 8;
-	
+	_identifier = @"default EDHTTPRequest", _tag = 0, _timeOutInterval = 8;
 	return self;
 }
 
 - (id)initWithURL:(NSURL *)url delegate:(id)theDelegate {
 	
 	self = [self init];
-	_requestURL = [url copy]; 
-	_delegate = [theDelegate retain];
+	_requestURL = [url copy], _delegate = [theDelegate retain];
 	return self;
 }
 
@@ -69,10 +63,9 @@
 		
 		_delegate = [theDelegate retain];
 		
-	} else {
+	} else
 		@throw [NSException exceptionWithName:@"EDHTTPRequest Exception" 
-									   reason:@"Delegate doesn't conform to EDHTTPRequestDelegate" userInfo:nil];
-	}
+												 reason:@"Delegate doesn't conform to EDHTTPRequestDelegate" userInfo:nil];
 }
 
 - (id)delegate {
@@ -87,42 +80,35 @@
 	
 	if(!_delegate || !_requestURL || _running) {
 		
-		if(!_delegate) {
+		if(!_delegate)
 			@throw [NSException exceptionWithName:@"EDHTTPRequest Exception" reason:@"No Delegate defined" userInfo:nil];
-		} else if(!_requestURL) {
+		else if(!_requestURL)
 			@throw [NSException exceptionWithName:@"EDHTTPRequest Exception" reason:@"No URL defined" userInfo:nil];
-		} else if(_running) {
-			if(_delegate) 
-				[_delegate request:self didFailWithError:EDHTTPRequestErrorParallelRequests status:0];
-		}
+		else if(_running)
+			if(_delegate) [_delegate request:self didFailWithError:EDHTTPRequestErrorParallelRequests status:0];
 		
 	} else {
 		
-		_running = YES;
-		_responseTime = 0;
-		[_response release];
+		_running = YES, _responseTime = 0, [_response release];
 		
-		if(!_timeOutInterval)
-			_timeOutInterval = 15;
+		if(!_timeOutInterval) _timeOutInterval = 15;
 
 		NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:_requestURL 
-																	cachePolicy:NSURLRequestUseProtocolCachePolicy 
-																timeoutInterval:(float)_timeOutInterval];
+																						cachePolicy:NSURLRequestUseProtocolCachePolicy 
+																				  timeoutInterval:(float)_timeOutInterval];
 		
 		switch (_method) {
-			case EDHTTPRequestMethodGet: [request setHTTPMethod:@"GET"]; break;
-			case EDHTTPRequestMethodPost: [request setHTTPMethod:@"POST"]; break;
-			case EDHTTPRequestMethodHead: [request setHTTPMethod:@"HEAD"]; break;
-			case EDHTTPRequestMethodPut: [request setHTTPMethod:@"PUT"]; break;
-			case EDHTTPRequestMethodDelete: [request setHTTPMethod:@"DELETE"]; break;
-			default: [request setHTTPMethod:@"GET"];
+			case EDHTTPRequestMethodGet:		[request setHTTPMethod:@"GET"];		break;
+			case EDHTTPRequestMethodPost:		[request setHTTPMethod:@"POST"];		break;
+			case EDHTTPRequestMethodHead:		[request setHTTPMethod:@"HEAD"];		break;
+			case EDHTTPRequestMethodPut:		[request setHTTPMethod:@"PUT"];		break;
+			case EDHTTPRequestMethodDelete:	[request setHTTPMethod:@"DELETE"];	break;
+			default:									[request setHTTPMethod:@"GET"];
 		}
 		
-		if(_requestBody)
-			[request setHTTPBody:_requestBody];
+		if(_requestBody) [request setHTTPBody:_requestBody];
 		
-		if(_requestHeaders) 
-			[request setAllHTTPHeaderFields:_requestHeaders];
+		if(_requestHeaders) [request setAllHTTPHeaderFields:_requestHeaders];
 		
 		_urlConnection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
 		
@@ -132,16 +118,14 @@
 			NSLog(@"EDHTTPRequest: %@ %@", [request HTTPMethod], _requestURL);
 			_responseData = [[NSMutableData alloc] init];
 			_requestTime = [[NSDate alloc] init];
-		} else {
+		} else
 			[_delegate request:self didFailWithError:EDHTTPRequestErrorConnectionInitFailed status:0];
-		}
 	}
 }
 
 - (void)cancel {
 	
-	_running = NO;
-	[_urlConnection cancel];
+	_running = NO, [_urlConnection cancel];
 	[_responseData release], [_requestTime release];
 	_responseData = nil, _requestTime = nil;	
 }
@@ -175,12 +159,12 @@
 - (void)connection:(NSURLConnection *)connection didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge {
 	
 	 if ([challenge previousFailureCount] == 0) {
-		 NSURLCredential *newCredential;
-		 newCredential = [NSURLCredential credentialWithUser:_credentialUser
-																  password:_credentialPassword
-															  persistence:NSURLCredentialPersistenceNone];
+
+		 NSURLCredential *credential = [NSURLCredential credentialWithUser:_credentialUser
+																					 password:_credentialPassword
+																				 persistence:NSURLCredentialPersistenceNone];
 		 
-		 [[challenge sender] useCredential:newCredential forAuthenticationChallenge:challenge];
+		 [[challenge sender] useCredential:credential forAuthenticationChallenge:challenge];
 		 
     } else {
 		 
@@ -224,11 +208,10 @@
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
 	
-	if(_responseData) {
+	if(_responseData)
 		[_responseData appendData:data];
-	} else {
+	else
 		[_delegate request:self didFailWithError:EDHTTPRequestErrorFailedSavingResponseData status:0];
-	}
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
@@ -244,15 +227,8 @@
 
 - (NSString *)description {
 	
-	if(_running) {
-		return [NSString stringWithFormat:@"EDHTTPRequest: running %@ - request time: %@", 
-				[_requestURL absoluteString], _requestTime];
-	} else {
-		return [NSString stringWithFormat:@"EDHTTPRequest: ready %@ - request time: %@", 
-				[_requestURL absoluteString], _requestTime];		
-	}
-	
-	return @"EDHTTPRequest:";
+	return [NSString stringWithFormat:@"EDHTTPRequest: %@ %@ - request time: %@", 
+			  _running?@"running":@"ready", [_requestURL absoluteString], _requestTime];
 }
 
 - (void)dealloc {
