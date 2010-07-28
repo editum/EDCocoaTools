@@ -234,7 +234,7 @@
 - (NSString *)description {
 	
 	return [NSString stringWithFormat:@"EDHTTPRequest: %@ %@ - request time: %@", 
-			  _running?@"running":@"ready", [_requestURL absoluteString], _requestTime];
+			  _running?@"running":@"ready", _requestURL, _requestTime];
 }
 
 - (void)dealloc {
