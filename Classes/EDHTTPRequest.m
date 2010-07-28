@@ -130,6 +130,12 @@
 	_responseData = nil, _requestTime = nil;	
 }
 
+- (void)setValue:(NSString *)value forHeaderField:(NSString *)field {
+	
+	if(!_requestHeaders) _requestHeaders = [[NSMutableDictionary alloc] init];
+	[_requestHeaders setValue:value forKey:field];
+}
+
 #pragma mark -
 #pragma mark NSURLConnection Delegate Methods
 

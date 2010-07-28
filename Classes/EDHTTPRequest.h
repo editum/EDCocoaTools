@@ -87,6 +87,7 @@ typedef enum {
 + (EDHTTPRequest *)requestWithURL:(NSURL *)url delegate:(id)theDelegate;
 - (id)initWithURL:(NSURL *)url delegate:(id)theDelegate;
 
+- (void)setValue:(NSString *)value forHeaderField:(NSString *)field;
 - (void)start;
 - (void)cancel;
 
