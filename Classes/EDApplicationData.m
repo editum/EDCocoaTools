@@ -201,7 +201,7 @@ static EDApplicationData *gAppDataInstance = nil;
 		}
 	}
 	
-	return returnString = [returnString stringByAppendingString:@"}"];
+	return [returnString stringByAppendingString:@"}"];
 }
 
 - (void)dealloc {
