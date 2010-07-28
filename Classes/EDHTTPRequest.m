@@ -35,7 +35,7 @@
 	return self;
 }
 
-- (id)initWithURL:(NSURL *)url delegate:(id)theDelegate {
+- (id)initWithURL:(NSString *)url delegate:(id)theDelegate {
 	
 	self = [self init];
 	_requestURL = [url copy], _delegate = [theDelegate retain];
@@ -47,7 +47,7 @@
 	return [[[self alloc] init] autorelease];
 }
 
-+ (EDHTTPRequest *)requestWithURL:(NSURL *)url delegate:(id)theDelegate {
++ (EDHTTPRequest *)requestWithURL:(NSString *)url delegate:(id)theDelegate {
 	
 	return [[[self alloc] initWithURL:url delegate:theDelegate] autorelease];
 }
@@ -93,7 +93,7 @@
 		
 		if(!_timeOutInterval) _timeOutInterval = 15;
 
-		NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:_requestURL 
+		NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:_requestURL] 
 																						cachePolicy:NSURLRequestUseProtocolCachePolicy 
 																				  timeoutInterval:(float)_timeOutInterval];
 		

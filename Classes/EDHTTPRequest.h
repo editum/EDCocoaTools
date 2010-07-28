@@ -58,7 +58,7 @@ typedef enum {
 	NSString *_identifier;
 	NSUInteger _tag;
 	NSUInteger _timeOutInterval;
-	NSURL *_requestURL;
+	NSString *_requestURL;
 	
 	NSDate *_requestTime;
 	NSTimeInterval _responseTime;
@@ -78,14 +78,14 @@ typedef enum {
 @property(nonatomic, copy) NSString *identifier;
 @property NSUInteger tag;
 @property NSUInteger timeOutInterval;
-@property(nonatomic, copy) NSURL *requestURL;
+@property(nonatomic, copy) NSString *requestURL;
 
 @property(nonatomic, readonly) NSHTTPURLResponse *response;
 @property(readonly) NSTimeInterval responseTime;
 
 + (EDHTTPRequest *)request;
-+ (EDHTTPRequest *)requestWithURL:(NSURL *)url delegate:(id)theDelegate;
-- (id)initWithURL:(NSURL *)url delegate:(id)theDelegate;
++ (EDHTTPRequest *)requestWithURL:(NSString *)url delegate:(id)theDelegate;
+- (id)initWithURL:(NSString *)url delegate:(id)theDelegate;
 
 - (void)setValue:(NSString *)value forHeaderField:(NSString *)field;
 - (void)start;
